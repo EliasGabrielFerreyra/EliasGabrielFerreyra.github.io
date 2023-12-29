@@ -35,7 +35,7 @@ body .card #message-section::-webkit-scrollbar {
 }
 
 body .card #message-section {
-  height: 450px;
+  height: 500%;
   padding: 0 2.5vmin;
   overflow-y: auto;
   scrollbar-width: thin;
