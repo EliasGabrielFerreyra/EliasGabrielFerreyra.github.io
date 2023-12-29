@@ -40,7 +40,10 @@
       .replace(/ please/g, "")
       .trim();
   
+
     // Llamada a la API
+    // Muestra el indicador visual
+    addChat(input, "Pensando...");
     fetch("https://3363-186-148-66-139.ngrok-free.app", {
       method: "POST",
       headers: {
@@ -54,8 +57,12 @@
     .then(response => response.json())
     .then(result => {
       console.log('API Response:', result);
-      const responseText = JSON.stringify(result);
-      addChat(input, responseText);
+      
+      // Accede solo al contenido dentro de "answergpt3"
+      const responseText = result.hiddenContext?.answergpt3 || "Respuesta no encontrada";
+      
+      //addChat(input, responseText);
+      updateChat("Pensando...", responseText);
     })
     .catch(error => {
       console.error('Error:', error);
@@ -81,7 +88,17 @@
     scroll.scrollTop = scroll.scrollHeight;
     voiceControl(product);
   }
-  
+  function updateChat(oldMessage, newMessage) {
+    // Encuentra el elemento en el chat con el mensaje anterior
+    const chatMessages = document.getElementById("message-section").getElementsByClassName("message");
+    for (let i = chatMessages.length - 1; i >= 0; i--) {
+      if (chatMessages[i].textContent.trim() === oldMessage) {
+        // Actualiza el mensaje
+        chatMessages[i].innerHTML = `<span id="bot-response">${newMessage}</span>`;
+        break;
+      }
+    }
+  }
   function compare(triggerArray, replyArray, string) {
     let item;
     for (let x = 0; x < triggerArray.length; x++) {
