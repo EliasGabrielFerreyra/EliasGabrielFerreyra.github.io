@@ -9,12 +9,12 @@ html {
 }
 
 body {
-  background: #ccc;
+  background: #ffffff;
 }
 
 body .card {
   height: 100%;
-  width: 100%;
+  width: 99%;
   background-color: white;
 }
 
@@ -26,9 +26,8 @@ body .card #header {
 
 body .card #header h1 {
   color: #fff;
-  font-size: 3vmin;
-  font-family: "Finger Paint", cursive;
-  padding: 1vmin;
+  font-size: 5vmin;
+  padding: 3vmin;
 }
 
 body .card #message-section::-webkit-scrollbar {
@@ -36,7 +35,7 @@ body .card #message-section::-webkit-scrollbar {
 }
 
 body .card #message-section {
-  height: 1000px;
+  height: 500px;
   padding: 0 2.5vmin;
   overflow-y: auto;
   scrollbar-width: thin;
@@ -105,7 +104,7 @@ body .card #input-section input {
   min-width: 0.5vmin;
   outline: none;
   height: 5vmin;
-  width: 90%;
+  width: 99%;
   border-top: none;
   border-left: none;
   border-right: none;
