@@ -1,31 +1,30 @@
 * {
   font-size: 4vmin;
-  font-family: "Epilogue", sans-serif;
 }
 
 html {
-  --scrollbarBG: #fff;
-  --thumbBG: #90a4ae;
+  --scrollbarBG: #E8E8E8;
+  --thumbBG: #005B96;
 }
 
 body {
-  background: #ffffff;
+  background: #E8E8E8;
 }
 
 body .card {
   height: 100%;
   width: 99%;
-  background-color: white;
+  background-color: #E8E8E8;
 }
 
 body .card #header {
   height: 5%;
-  background: #000;
+  background: #005B96;
   padding: 0;
 }
 
 body .card #header h1 {
-  color: #fff;
+  color: #E8E8E8;
   font-size: 5vmin;
   padding: 3vmin;
 }
@@ -57,17 +56,17 @@ body .card #message-section #user {
   position: relative;
   bottom: 0;
   min-height: 1.5vmin;
-  border: 0.15vmin solid #777;
-  background-color: #fff;
+  border: 0.15vmin solid #FFFFFF;
+  background-color: #FFFFFF;
   border-radius: 0 1.5vmin 1.5vmin 1.8vmin;
   padding: 1vmin;
   margin: 1.5vmin 0;
 }
 
 body .card #message-section #user {
-  border: 1.5px solid #000;
+  border: 1.5px solid #2E404D;
   border-radius: 1.5vmin 0 1.5vmin 1.8vmin;
-  background-color: #000;
+  background-color: #2E404D;
   float: right;
 }
 
@@ -76,7 +75,7 @@ body .card #message-section #user #user-response {
 }
 
 body .card #message-section .message {
-  color: #000;
+  color: #070F26;
   clear: both;
   line-height: 5vmin;
   font-size: 3vmin;
@@ -100,7 +99,7 @@ body .card #input-section {
 }
 
 body .card #input-section input {
-  color: #000;
+  color: #070F26;
   min-width: 0.5vmin;
   outline: none;
   height: 5vmin;
@@ -108,7 +107,7 @@ body .card #input-section input {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: solid #000 0.1vmin;
+  border-bottom: solid #070F26 0.1vmin;
 }
 
 body .card .send {
@@ -144,6 +143,6 @@ body .card .send .circle i {
   bottom: 0;
   right: 0;
   background-color: #fff;
-  border: 0.1vmin solid #ddd;
+  border: 0.1vmin solid #fff;
   padding: 1vmin;
 }
