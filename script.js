@@ -66,7 +66,8 @@
     })
     .catch(error => {
       console.error('Error:', error);
-      addChat(input, "Error fetching response"); // Manejamos el error mostrando un mensaje de error en la interfaz
+      updateChat("Pensando...", error + "fetching response");
+      //addChat(input, "Error fetching response"); // Manejamos el error mostrando un mensaje de error en la interfaz
     });
   }
   

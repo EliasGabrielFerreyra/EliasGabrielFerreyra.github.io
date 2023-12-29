@@ -16,8 +16,7 @@
     height: 100%;
     width: 100%;
     background-color: white;
-
-    box-shadow: 2vw 2vw 12vw 3vw #ccc;
+    
   }
   body .card #header {
     height: 5vw;
@@ -25,6 +24,8 @@
     padding: 0vw;
   }
   body .card #header h1 {
+
+    /* Añade esta línea para eliminar el margen */
     color: #fff;
     font-size: 2vw;
     font-family: "Finger Paint", cursive;
@@ -34,7 +35,8 @@
     width: 10px;
   }
   body .card #message-section {
-    height: 32vw;
+    
+    height: 90vw;
     padding: 0 2.5vw;
     overflow-y: auto;
     scrollbar-width: thin;
@@ -95,7 +97,7 @@
     min-width: 0.5vw;
     outline: none;
     height: 5vw;
-    width: 26vw;
+    width: 90%;
     border-top: none;
     border-left: none;
     border-right: none;
