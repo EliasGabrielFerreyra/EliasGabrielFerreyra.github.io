@@ -44,7 +44,7 @@
     // Llamada a la API
     // Muestra el indicador visual
     addChat(input, "Pensando...");
-    fetch("https://3363-186-148-66-139.ngrok-free.app", {
+    fetch("https://us-east1-mkt-003001-00813.cloudfunctions.net/Rogelio-IA", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
