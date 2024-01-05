@@ -1,4 +1,5 @@
 * {
+  font-family: 'Roboto',sans-serif;
   font-size: 4vmin;
   box-sizing: border-box;
   margin: 0 0;
@@ -26,10 +27,12 @@ body .card #header {
   padding: 0;
 }
 
-body .card #header h1 {
-  color: #E8E8E8;
-  font-size: 5vmin;
-  padding: 3vmin;
+body .card #header img 
+{
+  height: 80%;
+  margin-left: 10px;
+  margin-top: 5px;
+
 }
 
 body .card #message-section::-webkit-scrollbar {
@@ -85,7 +88,7 @@ body .card #message-section .message {
    /* Ajusta este valor para reducir el padding */
   margin: 0.5vmin 0; /* Ajusta este valor para reducir el margin */
   position: relative;
-  max-width: 85%;
+  max-width: 100%;
   word-wrap: break-word;
   z-index: 2;
 }
@@ -95,7 +98,7 @@ body .card #input-section {
   padding: 0 2.5vmin;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   overflow: hidden;
   height: 10%;
   width: 100%;
@@ -105,39 +108,42 @@ body .card #input-section input {
   color: #070F26;
   min-width: 0.5vmin;
   outline: none;
-  height: 5vmin;
+  height: 7vmin;
   width: 99%;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: solid #070F26 0.1vmin;
+  border-bottom: solid #070F26 0.2vmin;
 }
 
 body .card .send {
-  background: transparent;
+  
+  background-color:#005B96 ;
+  border-radius: 50%;
   border: 0;
   cursor: pointer;
   flex: 0 0 auto;
-  margin-left: 1.4vmin;
-  margin-right: 0;
-  padding: 0;
+  margin-left: 2.5vmin;
+
   position: relative;
   outline: none;
+
 }
 
 body .card .send .circle {
   position: relative;
-  width: 4.8vmin;
-  height: 4.8vmin;
+  width: 7.5vmin;
+  height: 7.5vmin;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 body .card .send .circle i {
+  color: #E8E8E8;
   font-size: 3vmin;
-  margin-left: -1vmin;
-  margin-top: 1vmin;
+  
+
 }
 
 #thinking-indicator {
