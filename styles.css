@@ -130,7 +130,30 @@ body .card .send {
 
 }
 
+body .card .mic {
+  
+  background-color:#005B96 ;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  flex: 0 0 auto;
+  margin-left: 2.5vmin;
+
+  position: relative;
+  outline: none;
+
+}
+
 body .card .send .circle {
+  position: relative;
+  width: 7.5vmin;
+  height: 7.5vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body .card .mic .circle {
   position: relative;
   width: 7.5vmin;
   height: 7.5vmin;
@@ -142,8 +165,11 @@ body .card .send .circle {
 body .card .send .circle i {
   color: #E8E8E8;
   font-size: 3vmin;
-  
+}
 
+body .card .mic .circle i {
+  color: #E8E8E8;
+  font-size: 3vmin;
 }
 
 #thinking-indicator {
